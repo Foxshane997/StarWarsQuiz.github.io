@@ -1,8 +1,25 @@
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #CEB5A7;
+    justify-content: center;
 }
 
 /* The header for the webpage */
+
+.heading-container {
+    text-align: center;
+    height: 13vh;
+    margin-bottom: 10px;
+    flex-direction: column;
+    color: #4B543B;
+}
+
+.heading-container > h3 {
+    color: lightgoldenrodyellow;
+}
+
 h1 {
     margin: auto;
     justify-content: center;
@@ -13,16 +30,6 @@ h1 {
     width: 300px;
 }
 
-
-.heading-cont {
-    color: black;
-    text-align: center;
-    height: 11.5vh;
-    margin-bottom: 10px;
-    flex-direction: column;
-    color: #4B543B;
-}
-
 /* constainer for the entire quiz */
 .app {
     display: flex; 
@@ -30,8 +37,8 @@ h1 {
     align-items: center;
     background-color: #E0F2E9;
     border: 2px solid #A17C6B;
-    height: 85vh;
-    width: 99vw;
+    height: 83.5vh;
+    width: 98vw;
     
 }
 
@@ -81,9 +88,9 @@ h1 {
     padding-top: -100px;
 }
 
-/* Adding a hover effect to show which you are selecting */
+/* Adding a hover effect to show which one you are selecting */
 .label-string:hover {
     color: #4B543B;
-    font-weight: 800;
+    font-weight: 1000;
 }
 

@@ -2,25 +2,22 @@
 
 ## Description
 
-_(This will be a simple Star Wars trivia quiz.)_
+(This is a simple Star Wars trivia quiz.)
 
 
 ## Deployment
 
-The web game is deployed at __________________ (YOUR DEPLOYED GITHUB.IO URL).
+The web game is deployed at https://github.com/Foxshane997/Shane-Fox-Milestone-1 
 
 
 ## Game Logic
 
-```
-XXX Will change this when the functinality is done. XXX
+ Base on what you answer you will be given a score on how in depth or how correct your answer is. 
 
-Instructions: 
+## Instructions 
 - This is a mulitple choice trivia quiz & you will be choosing an answer you think is the most correct.
 
 - When you choose an option it will tell you how well you did after submitting.
-
-```
 
 ### Post-MVP Plans
 

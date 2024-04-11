@@ -2,6 +2,10 @@
 const question = [
     {
         question: "place holder questions",
-        answers
+        answers: [
+            {text: "", correct: false},
+            {text: "", correct: false},
+            {text: "", correct: false}
+        ]
     }
 ]
