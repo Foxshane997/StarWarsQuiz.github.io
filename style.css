@@ -1,17 +1,19 @@
 body {
     background-color: #CEB5A7;
 }
+
+/* The header for the webpage */
 h1 {
     margin: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-bottom: 1.5px solid #4B543B;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
     width: 300px;
 }
 
-/* the header of the webpage */
+
 .heading-cont {
     color: black;
     text-align: center;
@@ -26,7 +28,6 @@ h1 {
     display: flex; 
     justify-content: center;
     align-items: center;
-    text-align: center;
     background-color: #E0F2E9;
     border: 2px solid #A17C6B;
     height: 85vh;
@@ -52,20 +53,18 @@ h1 {
 #question {
     border-bottom: 1px solid #4B543B; 
     color: #051017;
-    margin-bottom: -1.5em;
+    /* margin-top: 50px; */
+    margin-bottom: 6px;
     color: #4B543B;
-    padding-bottom: 1em;
+    padding-bottom: 5px;
     
 }
 
-/* button container
-#answer-buttons { 
-    /width: 300px; 
-     display: flex; 
-     flex-direction: column; 
-     justify-content: center; 
-     align-items: center;
-} */
+ /* button container */
+ #answer-buttons { 
+    margin-top: auto;
+    margin-bottom: auto;
+} 
 
 /* the actual buttons */
 .btn {
@@ -73,11 +72,18 @@ h1 {
     justify-content:space-between;
     align-items: center;
     background-color: #E0F2E9;
-    margin-top: 60px;
+    color: #4B543B;
     font-weight: 600;
     border-radius: 10px;
     border: 2px solid #A17C6B;
     border-style: outset;
+    margin-bottom: 1em;
+    padding-top: -100px;
+}
+
+/* Adding a hover effect to show which you are selecting */
+.label-string:hover {
     color: #4B543B;
+    font-weight: 800;
 }
 
