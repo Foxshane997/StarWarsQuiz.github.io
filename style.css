@@ -1,28 +1,42 @@
 body {
-    background-color: lightcyan;
+    background-color: #CEB5A7;
+}
+h1 {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1.5px solid #4B543B;
+    padding-bottom: 3px;
+    width: 300px;
 }
 
+/* the header of the webpage */
 .heading-cont {
     color: black;
     text-align: center;
     height: 11.5vh;
     margin-bottom: 10px;
     flex-direction: column;
+    color: #4B543B;
 }
 
+/* constainer for the entire quiz */
 .app {
     display: flex; 
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: white;
-    border: 2px solid black;
+    background-color: #E0F2E9;
+    border: 2px solid #A17C6B;
     height: 85vh;
     width: 99vw;
+    
 }
 
+/* quiz container */
 .quiz {
-    border: 2px solid black;
+    border: 2px solid #A17C6B;
     border-radius: 10px;
     width: 90%;
     max-width: 600px;
@@ -31,9 +45,39 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
+    background-color: #CEB5A7;
 }
 
-
+/* the question */
 #question {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #4B543B; 
+    color: #051017;
+    margin-bottom: -1.5em;
+    color: #4B543B;
+    padding-bottom: 1em;
+    
 }
+
+/* button container
+#answer-buttons { 
+    /width: 300px; 
+     display: flex; 
+     flex-direction: column; 
+     justify-content: center; 
+     align-items: center;
+} */
+
+/* the actual buttons */
+.btn {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #E0F2E9;
+    margin-top: 60px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid #A17C6B;
+    border-style: outset;
+    color: #4B543B;
+}
+

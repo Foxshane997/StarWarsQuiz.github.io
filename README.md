@@ -1,8 +1,8 @@
-# Title of Project (This is usually at the top of a repo's main README.md file.)
+# Title of Project (Star Wars Trivia Quiz.)
 
 ## Description
 
-_(Replace this text with a brief description of your game and what inspired you to make it.)_
+_(This will be a simple Star Wars trivia quiz.)_
 
 
 ## Deployment
@@ -13,24 +13,13 @@ The web game is deployed at __________________ (YOUR DEPLOYED GITHUB.IO URL).
 ## Game Logic
 
 ```
-XXX Remember to delete the instructions for this repo section below before finalizing and submitting your project because this project is part of your portfolio you should be showcasing. XXX
+XXX Will change this when the functinality is done. XXX
 
 Instructions: 
-The writing should describe in plain, simple language the logic of the game.
-Describe the logic involved in player decisions.
-  - What are the choices available to the player?
-  - What happens when the player makes a choice?
-Describe the logic that evaluates the player's victory/loss/progress status:
+- This is a mulitple choice trivia quiz & you will be choosing an answer you think is the most correct.
 
-___________________________________________________________________________________
+- When you choose an option it will tell you how well you did after submitting.
 
-___________________________________________________________________________________
-
-___________________________________________________________________________________
-
-___________________________________________________________________________________
-
-___________________________________________________________________________________
 ```
 
 ### Post-MVP Plans
