@@ -25,10 +25,11 @@ body {
 
 .heading {
     text-align: center;
-     font-size: 40px; /* maybe change to font weight */
-     margin-bottom: 50px;
-    border-bottom: 1px solid black;
+    font-size: 40px; 
+    margin-bottom: 50px;
+    border-bottom: 1.5px solid lightcyan; 
     padding-bottom: 10px;
+    color: lightcyan; 
 }
 
 label {
@@ -104,10 +105,40 @@ select {
 
 }
 
-.timer .progress .progress-bar{
-    width: 100%;
+.timer .progress .progress-bar {
+    width: 50%;
     height: 100%;
     border-radius: 30px;
     overflow: hidden;
     background: linear-gradient(to right, #456990, #C2AFF0);
+    transition: 1s linear;
+}
+
+.timer .progress .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: lightcyan;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.question-wrapper .number {
+    color: #8FF7A7; /* change later */
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.question-wrapper .number .total {
+    color: aqua; /* Change later */
+    font-size: 18px;
+}
+
+.question-wrapper .question {
+    color: #8FF7A7;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
