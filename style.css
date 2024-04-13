@@ -45,7 +45,7 @@ select {
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
-    background-color: aliceblue;
+    background-color: lightcyan;
     color: black;
     font-size: 15px;
     font-weight: 600;
@@ -77,6 +77,11 @@ select {
 .btn:disabled {
     cursor: not-allowed;
     background-color: #456990;
+    border-color: #456990;
+    color: lightcyan;
+    box-shadow: none;
+    border-bottom: lightcyan;
+    border-right: lightcyan;
 }
 
 .hide {
@@ -200,4 +205,9 @@ select {
 .answer-wrapper {
     margin-bottom: 50px;
 
+}
+
+.btn.next {
+    /* show when answer is submitted */
+    display: none;
 }
