@@ -193,10 +193,12 @@ select {
     opacity: 1; /* Probably will remove I dont think i need this */
 }
 
+/* added correct on here to as an example  */
 .answer.correct {
     border-color: #8FF7A7;
 }
 
+    /* added wrong on here to as an example  */
 .answer.wrong {
     border-color: red;
 }
