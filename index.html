@@ -3,60 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milestone-1</title>
+    <title>Quiz Game V.2</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    
+    <div class="container">
+        <div class="start-screen hide">
+            <h1 class="heading">Star Wars Quiz</h1>
+            <div class="settings">
+                <!-- How many questions -->
+                <label for="num-questions">Number of Questions</label>
+                <select name="" id="num0questions">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
 
-    <!-- Container for the "header" -->
-    <div class="heading-container">
-    <h1>Milestone Project 1</h1>
-    <h2>Please answer the questions to the best of your abilities and submit your answers.</h2>
-    <h3>Let's see how good your Star Wars knowlege is!</h3>          <!-- change the font later! -->
-    </div>
-
-    <!-- Section for the entire quiz without the header & footer -->
-    <section>
-        
-        <!-- Container for the whole quiz minus the headers and will be for background image later -->
-        <div class="app">
-            <!-- The Container for the acutal quiz questions -->
-            <div class="quiz">
-                    <!-- First Question Set -->
-                    <h2 id="question">Place Holder Question 1</h2>
-                <div id="answer-buttons">
-                    <label class="label-string" for="question-1">Question 1</label>
-                    <input class="btn"  type="radio" value="question-1">
-                    <label class="label-string" for="question-2">Question 2</label>
-                    <input class="btn" type="radio" value="question-2">
-                    <label class="label-string" for="question-3">Question 2</label>
-                    <input class="btn" type="radio" value="question-3">
-                
-                    <!-- Second Question Set  -->
-                    <h2 id="question">Place Holder Question 2</h2>
-                    <label class="label-string" for="question-1">Question 1</label>
-                    <input class="btn"  type="radio" value="question-1">
-                    <label class="label-string" for="question-2">Question 2</label>
-                    <input class="btn" type="radio" value="question-2">
-                    <label class="label-string" for="question-3">Question 3</label>
-                    <input class="btn" type="radio" value="question-3">
-
-                    <!-- Third Question Set -->
-                    <h2 id="question">Place Holder Question 3</h2>
-                    <label class="label-string" for="question-1">Question 1</label>
-                    <input class="btn"  type="radio" value="question-1">
-                    <label class="label-string" for="question-2">Question 2</label>
-                    <input class="btn" type="radio" value="question-1">
-                    <label class="label-string" for="question-2">Question 3</label>
-                    <input class="btn" type="radio" value="question-1">
-                    </div>
+                <!-- How much time for each question -->
+                <label for="time">select time per question</label>
+                <select name="" id="num0questions">
+                    <option value="10">10 seconds</option>
+                    <option value="30">30 seconds</option>
+                    <option value="60">60 seconds</option>
+                </select>
+            </div>
+            <!-- The button to start quiz -->
+            <button class="btn start">Start Quiz!</button>
+        </div>
+        <div class="quiz">
+            <div class="timer">
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                    <span class="progress-text"></span>
                 </div>
             </div>
         </div>
-
-    </section>
-
-    <!-- linked JavaScript File -->
-<script src="./index.js"></script>
+    </div>
+    
+    <script>"./index.js"</script>
 </body>
 </html>
