@@ -9,7 +9,7 @@
 <body>
     
     <div class="container">
-        <div class="start-screen ">
+        <div class="start-screen hide">
             <h1 class="heading">Star Wars Quiz</h1>
             <div class="settings">
                 <!-- How many questions -->
@@ -31,6 +31,8 @@
             <!-- The button to start quiz -->
             <button class="btn start">Start Quiz!</button>
         </div>
+
+        <!-- Creating the timer & quiz questions -->
         <div class="quiz">
             <div class="timer">
                 <div class="progress">
@@ -38,14 +40,35 @@
                     <span class="progress-text">50</span>
                 </div>
             </div>
+
+            <!-- Creating the questions & answers -->
             <div class="question-wrapper">
                 <div class="number">
                     Question <span class="current">1</span
                     ><span class="total">/10</span>
                 </div>
-                <div class="question">This is a question</div>
-            </div>
-        </div>
+            <div class="question">This is a question</div>
+                <div class="answer-wrapper">
+                    <div class="answer selected">
+                        <span class="text">Answer</span>
+                        <span class="checkbox">
+                            <span class="icon">✓</span>
+                        </span>
+                    </div>
+                    <div class="answer correct">
+                        <span class="text">Answer</span>
+                        <span class="checkbox">
+                            <span class="icon">✓</span>
+                        </span>
+                    </div>
+                    <div class="answer wrong">
+                        <span class="text">Answer</span>
+                        <span class="checkbox">
+                            <span class="icon">✓</span>
+                        </span>
+                    </div>
+                    <button class="btn submit">Submit</button>
+            </div>     
     </div>
     
     <script>"./index.js"</script>
