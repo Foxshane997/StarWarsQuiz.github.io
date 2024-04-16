@@ -27,3 +27,10 @@ const progressBar =  document.querySelector(".progress-bar"),
 
     //     const url = `https:opentdb.com/api.php?amount`;
     // }
+
+    let answers = [
+        "?",
+        "?",
+        "?",
+        "?"
+    ];
