@@ -40,8 +40,8 @@ label {
     color: lightcyan;
 }
 
-label:hover {
-
+select:hover {
+    cursor: pointer;
 }
 
 select {
