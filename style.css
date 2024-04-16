@@ -34,10 +34,14 @@ body {
 
 label {
     display: block;
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 500;
     margin-bottom: 10px;
-    color: black;
+    color: lightcyan;
+}
+
+label:hover {
+
 }
 
 select {
@@ -52,6 +56,7 @@ select {
     text-transform: capitalize;
 }
 
+/* Styling of all the buttons added */
 .btn {
     width: 100%;
     height: 60px;
@@ -83,12 +88,15 @@ select {
     border-bottom: lightcyan;
     border-right: lightcyan;
 }
+/* Button styling end */
 
+/* controls if & when things are hidden */
 .hide {
     display: none;
 
 }
 
+/* The actual timer bar */
 .timer {
     width: 100%;
     height: 100px;
@@ -128,7 +136,9 @@ select {
     font-size: 17px;
     font-weight: 500;
 }
+/* Timer bar end */
 
+/* Styling for all questions & answers */
 .question-wrapper .number {
     color: lightcyan; 
     font-size: 25px;
@@ -208,8 +218,33 @@ select {
     margin-bottom: 50px;
 
 }
+/* Styling for questions & answers end */
 
 .btn.next {
     /* show when answer is submitted */
     display: none;
+}
+
+/* End screen styling start */
+.end-screen .score {
+    color: lightcyan;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.end-screen .score-text {
+    color: #99E2E2;
+    font-size: 16px;
+    margin-bottom: 120px;
+}
+/* End screen complete */
+
+@media (max-width: 468) {
+    .container {
+        min-height: 100vh;
+        max-width: 100%;
+        border-radius: 0;
+    }
 }

@@ -9,7 +9,7 @@
 <body>
     
     <div class="container">
-        <div class="start-screen hide">   <!-- remove hide from class to see this section -->
+        <div class="start-screen">   <!-- remove hide from class to see this section -->
             <h1 class="heading">Star Wars Quiz</h1>
             <div class="settings">
                 <!-- How many questions -->
@@ -35,7 +35,7 @@
         <!-- Creating the timer & quiz questions -->
         <div class="quiz">
             <div class="timer">
-                <div class="progress">
+                <div class="progress"> <!-- remove hide from the class! -->
                     <div class="progress-bar"></div>
                     <span class="progress-text">50</span>
                 </div>
@@ -67,12 +67,24 @@
                             <span class="icon">✓</span>
                         </span>
                     </div>
-                    <button class="btn submit" disabled>Submit</button> <!-- Need to fix the weird white border thing -->
-
+                    <button class="btn submit" disabled>Submit</button>
                     <button class="btn next">Next</button>
-            </div>     
-    </div>
-    
+            </div> 
+            
+            <!-- The end screen with score -->
+                <div class="end-screen">
+                    <h1 class="heading">Quiz App</h1>
+                    <div class="score">
+                        <span class="score-text">Your Score:</span>
+                        <div>
+                        <span class="final-score">0</span>
+                        <span class="total-score">/10</span>
+                    </div>
+                </div>
+                <button class="btn restart">Restart Quiz</button>
+            </div>
+        </div>
+            
     <script>"./index.js"</script>
 </body>
 </html>
