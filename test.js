@@ -1,19 +1,19 @@
 // Questions and answers
 const questionsAndAnswers = [
     {
-        question: "Who is Count Dooku?",
-        answers: ["Sith Lord", "Leader of the Separatist movement", "Former Jedi"],
-        correctAnswer: "Sith Lord"
+        question: "Who took Anakin's hand?",
+        answers: ["Asaj Ventress", "Count Doku", "Darth Vader"],
+        correctAnswer: "Count Doku"
     },
     {
-        question: "Who is Master Yoda?",
-        answers: ["Jedi Master", "Grand Master of the Jedi Order", "Skilled in the Force"],
-        correctAnswer: "Jedi Master"
+        question: "What is Count Doku's sith name?",
+        answers: ["Darth Doku", "Count Doku", "Darth Tyranus"],
+        correctAnswer: "Darth Tyranus"
     },
     {
-        question: "What is the Tantive IV?",
-        answers: ["Corellian corvette", "Diplomatic vessel", "Captured by the Empire in A New Hope"],
-        correctAnswer: "Corellian corvette"
+        question: "What planet is Chewbacca from?",
+        answers: ["Kashyyk", "Hoth", "Corellia"],
+        correctAnswer: "Kashyyk"
     }
 ];
 
@@ -46,7 +46,8 @@ document.querySelector('.start').addEventListener('click', () => {
     document.querySelector("#heading-2").classList.add("hide");
     document.querySelector(".score").classList.add("hide");
     document.querySelector(".restart").classList.remove("hide");
-    
+    document.querySelector(".progress").classList.remove("hide");
+    document.querySelector(".start-screen").classList.add("hide");
     // Add code to show the timer and quiz question wrapper here
 });
 
@@ -55,4 +56,6 @@ document.querySelector('.restart').addEventListener('click', () => {
     startQuiz();
     document.querySelector(".question-wrapper").classList.add("hide");
     document.querySelector(".restart").classList.add("hide");
+    document.querySelector(".start-screen").classList.remove("hide");
+    document.querySelector(".progress").classList.add("hide");
 });
