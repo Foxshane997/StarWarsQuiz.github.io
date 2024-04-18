@@ -42,7 +42,7 @@ function startQuiz() {
 // Event listener for the start button
 document.querySelector('.start').addEventListener('click', () => {
     startQuiz();
-    document.querySelector(".end-screen").classList.remove("hide");
+    // document.querySelector(".end-screen").classList.remove("hide");  // checking the UI without the end button
     document.querySelector("#heading-2").classList.add("hide");
     document.querySelector(".score").classList.add("hide");
     document.querySelector(".restart").classList.remove("hide");
