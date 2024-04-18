@@ -20,17 +20,16 @@ const progressBar =  document.querySelector(".progress-bar"),
         quiz = document.querySelector(".quiz"),
         startscreen = document.querySelector(".start-screen");
 
-    // const startQuiz = () => {
-    //     const num = numQuestions.value;
-    //     cat = category.value;
-    //     diff = difficulty.value; 
+    const startQuiz = () => {
+        const num = numQuestions.value;
+        // Array for answers
+        let answers = [
+            "?",
+            "?",
+            "?",
+            "?"
+        ];
+    };
 
-    //     const url = `https:opentdb.com/api.php?amount`;
-    // }
-
-    let answers = [
-        "?",
-        "?",
-        "?",
-        "?"
-    ];
+    startBtn.addEventListener("click", )  // didnt add the startQuiz function
+    
