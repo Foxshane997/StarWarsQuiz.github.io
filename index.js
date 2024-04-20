@@ -32,7 +32,7 @@ const questionsAndAnswers = [
     }
 ];
 
-// Declaring these globally.
+// Declaring these globally so they can be update when needed.
 let currentQuestionIndex = 0;
 let correctAnswers = 0;
 
@@ -61,17 +61,19 @@ function displayQuestion() {
 
 // Function to handle when the "Next" button is clicked.
 function onNextButtonClick() {
+    // This is pulling the questions & answers.
     const question = questionsAndAnswers[currentQuestionIndex];
     const selectedAnswer = document.querySelector('.answer.selected .text').textContent;
     if (selectedAnswer === question.correctAnswer) {
         correctAnswers++;
     }
 
+    // iterating through the question & answer array length
     currentQuestionIndex++;
     if (currentQuestionIndex < questionsAndAnswers.length) {
         displayQuestion();
     } else {
-        // Quiz is over, show end screen or handle accordingly.
+        // Quiz is over, show end screen after clicking the final next button.
         document.querySelector('.end-screen').classList.remove('hide');
         document.querySelector('.question-wrapper').classList.add('hide');
         document.querySelector('.final-score').textContent = correctAnswers;
@@ -86,7 +88,7 @@ document.querySelector('.next').addEventListener('click', onNextButtonClick);
 // Function to start the quiz.
 function startQuiz() {
     currentQuestionIndex = 0;
-    correctAnswers = 0; // Reset correct answers count.
+    correctAnswers = 0; // Resets correct answers count.
     displayQuestion();
 
     //  Adding the correct answers in the console when you start the game.
