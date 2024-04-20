@@ -106,14 +106,14 @@ select:hover {
 
 /* Styling for all questions & answers */
 .question-wrapper .number {
-    color: #4A4547; 
+    color: black; 
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .question-wrapper .number .total {
-    color: #1E1E1E; 
+    color: black; 
     font-size: 18px;
     font-weight: 700;
 }
