@@ -74,6 +74,14 @@ function startQuiz() {
     const question = selectRandomQuestion(); // Selecting a random question
     displayQuestion();
 
+    //  Adding the correct answers in the console start
+    questionsAndAnswers.forEach((item, index) => {
+        console.log(`Question ${index + 1}: ${item.question}`);
+        console.log(`Correct Answer: ${item.correctAnswer}`);
+        console.log(); // Empty line for separation
+    });
+    //  Adding the correct answers in the console end
+
     // Show the question wrapper and hide start screen
     document.querySelector('.question-wrapper').classList.remove('hide');
     document.querySelector('.start-screen').classList.add('hide');
