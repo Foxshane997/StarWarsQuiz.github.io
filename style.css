@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    /* background-color: #C2AFF0; */
     background-image: url(./assets/StarWars\ Galaxys\ Edge\ Pexels.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,11 +22,10 @@ body {
     width: 100%;
     max-width: 400px;
     height: auto;
-    /* background-color: lightslategrey; */
     opacity: 1;
     backdrop-filter: blur(10px);
     padding: 30px;
-    overflow: hidden; /* this hides clipping according to research. */
+    overflow: hidden; 
     border-radius: 10px;
     box-shadow: 0 0 15px lightgray;
 }
