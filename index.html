@@ -35,10 +35,9 @@
             <!-- Creating the questions & answers -->
             <div class="question-wrapper hide">
                 <div class="number">
-                    Question <span class="current">1</span
-                    ><span class="total">/?</span>
+                    Question <span class="current">1</span>/<span class="total"></span>
                 </div>
-            <div class="question">This is a question</div>
+                <div class="question">This is a question</div>
                 <div class="answer-wrapper">
                     <div class="answer">
                         <span class="text">Answer</span>
@@ -60,34 +59,23 @@
                     </div>
                     <button class="btn next">Next</button>
                     <button class="btn submit" disabled>Submit</button>
-            </div> 
-        </div>
+                </div> 
+            </div>
             
             <!-- The end screen with score -->
-                <div class="end-screen hide">    <!-- remove hide from class using JS-->
-                    <h1 id="heading-2" class="heading">Quiz App</h1>
-                    <div class="score">
-                        <span class="score-text">Your Score:</span>
-                        <div>
+            <div class="end-screen hide">
+                <h1 id="heading-2" class="heading">Quiz App</h1>
+                <div class="score">
+                    <span class="score-text">Your Score:</span>
+                    <div>
                         <span class="final-score">0</span>
                         <span class="total-score">/10</span>
                     </div>
                 </div>
                 <button class="btn restart hide">Restart Quiz</button>
             </div>
-    </div>
-
-        
-
-
-            <!-- <div class="win-messages ">
-                <p class="perfect-score">You are Jedi Master!</p>
-                <p class="medium-score">You are a Grey Jedi.</p>
-                <p class="bad-score">You're a womp rat!</p>
-            </div> -->
-            <!-- style later -->
-            
-    <script src="./test.js"></script>
+        </div>
+        <script src="./test.js"></script>
     <!-- Put what is in test.js in index.js once everything is working -->
 </body>
 </html>
