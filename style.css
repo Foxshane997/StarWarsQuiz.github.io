@@ -38,7 +38,7 @@ body {
     margin-bottom: 50px;
     border-bottom: 1.5px solid lightcyan; 
     padding-bottom: 10px;
-    color: #1E1E1E; 
+    color: black; 
 }
 
 label {
@@ -128,7 +128,7 @@ select:hover {
 .question:hover {
     font-size: xx-large;
     font-weight: 600;
-    color: #1E1E1E;
+    color: black;
     transition: all 0.5s;
     cursor: zoom-in;
     border-radius: 10px;
@@ -141,7 +141,7 @@ select:hover {
     width: 100%;
     height: 60px;
     padding: 20px;
-    color: #1E1E1E;
+    color: black;
     border: 2px solid lightcyan;
     border-radius: 10px;
     display: flex;
@@ -194,18 +194,23 @@ select:hover {
 
 /* End screen styling start */
 .end-screen .score {
-    color: #4A4547;
+    color: black;
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 80px;
     text-align: center;
+    background-color: lightcyan;
+    border-radius: 10px;
 }
 
 .end-screen .score-text {
-    color: #1E1E1E;
+    color: black;
+    background-color: lightcyan;
     font-size: 16px;
     margin-bottom: 120px;
+    padding-bottom: 10px;
 }
+
 /* End screen complete */
 
 .instruct-cont {
@@ -214,7 +219,7 @@ select:hover {
     align-items: center;
     margin-top: 30px;
     padding-bottom: 30px;
-    color: #4A4547;
+    color: black;
     border-bottom: 1px solid lightcyan;
 }
 
@@ -224,6 +229,16 @@ select:hover {
     cursor: zoom-in;
     font-weight: 600;
     color: black;
+    background-color: lightcyan;
+    padding: 5px;
+    border-radius: 10px;
+}
+.instruct-cont li :hover {
+    list-style-type: none;
+}
+
+.instruct-cont ul:hover {
+    list-style-type: none;
 }
 
 /* optimized for iphone */
