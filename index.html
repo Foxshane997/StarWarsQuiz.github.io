@@ -1,79 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Star Wars Quiz Game</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <img class="hide" src="" alt="Disney Galaxy's Edge Storm Trooper by Craig Adderley from Pexels">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <img
+      class="hide"
+      src=""
+      alt="Disney Galaxy's Edge Storm Trooper by Craig Adderley from Pexels"
+    />
     <div class="container">
-        <div class="start-screen">  
-            <h1 class="heading">Star Wars Quiz</h1>
-            <div class="settings">
+      <div class="start-screen">
+        <h1 class="heading">Star Wars Quiz</h1>
+        <div class="settings">
+          <!-- The button to start quiz -->
+          <button class="btn start">Start Quiz!</button>
 
-            <!-- The button to start quiz -->
-            <button class="btn start">Start Quiz!</button>
-
-            <!-- Added the instructions here -->
-            <div class="instruct-cont">
-                <ul>
-                    <li class="instruct-list"> click on the answer you think is correct.</li>
-                    <li class="instruct-list">Once an answer is selected click next to move on.</li>
-                    <li class="instruct-list">* YOU CANNOT CONTINUE IF YOU HAVEN'T CHOSEN AN ANSWER.</li>
-                </ul>
-            </div>
+          <!-- Added the instructions here -->
+          <div class="instruct-cont">
+            <ul>
+              <li class="instruct-list">
+                click on the answer you think is correct.
+              </li>
+              <li class="instruct-list">
+                Once an answer is selected click next to move on.
+              </li>
+              <li class="instruct-list">
+                * YOU CANNOT CONTINUE IF YOU HAVEN'T CHOSEN AN ANSWER.
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <!-- Creating the questions & answers -->
+      <div class="question-wrapper hide">
+        <div class="number">
+          Question <span class="current">1</span>/<span class="total"></span>
+        </div>
+        <div class="question">This is a question</div>
+        <div class="answer-wrapper">
+          <div class="answer">
+            <span class="text">Answer</span>
+            <span class="checkbox">
+              <span class="icon">✓</span>
+            </span>
+          </div>
+          <div class="answer">
+            <span class="text">Answer</span>
+            <span class="checkbox">
+              <span class="icon">✓</span>
+            </span>
+          </div>
+          <div class="answer">
+            <span class="text">Answer</span>
+            <span class="checkbox">
+              <span class="icon">✓</span>
+            </span>
+          </div>
+          <button class="btn next">Next</button>
+        </div>
+      </div>
+
+      <!-- The end screen with score -->
+      <div class="end-screen hide">
+        <h1 id="heading-2" class="heading">The End!</h1>
+        <div class="score-cont">
+          <div class="score">
+            <span class="score-text">Your Score:</span>
+            <div>
+              <span class="final-score">0</span>
+              <span class="total-score">/10</span>
+            </div>
+          </div>
+        </div>
+        <button class="btn restart hide">Restart Quiz</button>
+      </div>
     </div>
-
-            <!-- Creating the questions & answers -->
-            <div class="question-wrapper hide">
-                <div class="number">
-                    Question <span class="current">1</span>/<span class="total"></span>
-                </div>
-                <div class="question">This is a question</div>
-                <div class="answer-wrapper">
-                    <div class="answer">
-                        <span class="text">Answer</span>
-                        <span class="checkbox">
-                            <span class="icon">✓</span>
-                        </span>
-                    </div>
-                    <div class="answer">
-                        <span class="text">Answer</span>
-                        <span class="checkbox">
-                            <span class="icon">✓</span>
-                        </span>
-                    </div>
-                    <div class="answer">
-                        <span class="text">Answer</span>
-                        <span class="checkbox">
-                            <span class="icon">✓</span>
-                        </span>
-                    </div>
-                    <button class="btn next">Next</button>
-                </div> 
-            </div>
-            
-            <!-- The end screen with score -->
-            <div class="end-screen hide">
-                <h1 id="heading-2" class="heading">The End!</h1>
-                <div class="score-cont">
-                <div class="score">
-                    <span class="score-text">Your Score:</span>
-                    <div>
-                        <span class="final-score">0</span>
-                        <span class="total-score">/10</span>
-                    </div>
-                </div>
-            </div>
-                <button class="btn restart hide">Restart Quiz</button>
-            </div>
-        </div>
-        <script src="./index.js"></script>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>

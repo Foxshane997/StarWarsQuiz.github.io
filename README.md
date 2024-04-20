@@ -18,7 +18,7 @@ Github link - (https://github.com/Foxshane997/StarWarsQuiz.github.io)
  Base on what you answer you will be given a score on how many you get correct. 
 
 ## Instructions 
-- This is a mulitple choice trivia quiz & you will be choosing an answer you think is correct.
+- This is a multiple choice trivia quiz & you will be choosing an answer you think is correct.
 
 - Click next to go to the next question & set of answers until you reach the end!
 
