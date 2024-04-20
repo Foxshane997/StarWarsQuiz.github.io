@@ -179,10 +179,6 @@ select {
 }
 /* Styling for questions & answers end */
 
-.btn.next {
-    /* show when answer is submitted */
-    /* display: none; */
-}
 
 /* End screen styling start */
 .end-screen .score {
