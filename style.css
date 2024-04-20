@@ -35,10 +35,12 @@ body {
 .heading {
     text-align: center;
     font-size: 40px; 
+    font-weight: 650;
     margin-bottom: 50px;
     border-bottom: 1.5px solid lightcyan; 
     padding-bottom: 10px;
     color: black; 
+    text-shadow: 0 0 10px white;
 }
 
 label {
