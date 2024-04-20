@@ -12,18 +12,20 @@ The web game is deployed at https://github.com/Foxshane997/Shane-Fox-Milestone-1
 
 ## Game Logic
 
- Base on what you answer you will be given a score on how in depth or how correct your answer is. 
+ Base on what you answer you will be given a score on how many you get correct. 
 
 ## Instructions 
-- This is a mulitple choice trivia quiz & you will be choosing an answer you think is the most correct.
+- This is a mulitple choice trivia quiz & you will be choosing an answer you think is correct.
 
-- When you choose an option it will tell you how well you did after submitting.
+- Your score will be shown at the end. 
 
 ### Post-MVP Plans
 
-XXX Replace the text below as you list with your own text then delete this line. XXX
+- I wanted to the answers in the console so you can secretly access them before the project deadline.
 
-- One great idea I hope to be able to add in before the project deadline.
-- Another that will be a stretch.
-- Something else I don't technically know how to do... *yet*. :)
 
+
+Credits:
+
+image from pexels by Craig Adderley
+https://www.pexels.com/photo/shallow-focus-photo-of-stormtrooper-3526022/
