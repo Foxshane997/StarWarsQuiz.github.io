@@ -39,7 +39,7 @@ let correctAnswers = 0;
 
 // Function to display the current question and answers.
 function displayQuestion() {
-    const question = questionsAndAnswers[currentQuestionIndex];
+    const question = selectRandomQuestion();
     document.querySelector('.question').textContent = question.question;
     const answerElements = document.querySelectorAll('.answer');
     answerElements.forEach((answerElement, index) => {
@@ -88,12 +88,11 @@ document.querySelector('.next').addEventListener('click', onNextButtonClick);
 function startQuiz() {
     currentQuestionIndex = 0;
     correctAnswers = 0; // Reset correct answers count.
-    const question = selectRandomQuestion(); // Selecting a random question.
     displayQuestion();
 
     //  Adding the correct answers in the console when you start the game.
     questionsAndAnswers.forEach((item, index) => {
-        console.log(`Question ${index + 1}: ${item.question}`);
+        console.log(`Question: ${item.question}`);
         console.log(`Correct Answer: ${item.correctAnswer}`);
         console.log(); // Empty line for separation in the order they are written.
     });
