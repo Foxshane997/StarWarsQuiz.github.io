@@ -16,52 +16,27 @@
             <h1 class="heading">Star Wars Quiz</h1>
             <div class="settings">
 
-                <!-- How many questions -->
-                <label for="num-questions">Number of Questions</label>
-                <select name="" id="num0questions">
-                    <option value="select-amount">Select Amount</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
-
-                <!-- How much time for each question -->
-                <label for="time">select time per question</label>
-                <select name="" id="num0questions">
-                    <option value="Select-Limit">Select Time</option>
-                    <option value="15">15 seconds</option>
-                    <option value="30">30 seconds</option>
-                    <option value="60">60 seconds</option>
-                </select>
-            </div>
-
             <!-- The button to start quiz -->
             <button class="btn start">Start Quiz!</button>
 
             <!-- Added the instructions here -->
             <div class="instruct-cont">
                 <ul>
-                    <li class="instruct-list">Select question amount</li>
                     <li class="instruct-list">Select time amount</li>
                     <li class="instruct-list">After selecting answer click sbumit button</li>
                     <li class="instruct-list">Once done with questions click submit</li>
                 </ul>
             </div>
         </div>
-
+    </div>
+        
         <!-- Creating the timer & quiz questions -->
-            <div class="timer">
-                <div class="progress hide"> <!-- remove hide from the class using JS -->
-                    <div class="progress-bar"></div>
-                    <span class="progress-text">50</span>
-                </div>
-            </div>
 
             <!-- Creating the questions & answers -->
             <div class="question-wrapper hide">
                 <div class="number">
                     Question <span class="current">1</span
-                    ><span class="total">/10</span>
+                    ><span class="total">/?</span>
                 </div>
             <div class="question">This is a question</div>
                 <div class="answer-wrapper">
@@ -83,8 +58,8 @@
                             <span class="icon">✓</span>
                         </span>
                     </div>
-                    <button class="btn submit" disabled>Submit</button>
                     <button class="btn next">Next</button>
+                    <button class="btn submit" disabled>Submit</button>
             </div> 
         </div>
             

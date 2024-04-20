@@ -71,7 +71,6 @@ select {
     font-size: 20;
     font-weight: 700;
     cursor: pointer;
-    margin-top: 30px;
     transition: all 0.3s linear;
 }
 
@@ -97,50 +96,8 @@ select {
 /* controls if & when things are hidden */
 .hide {
     display: none;
-
 }
 
-/* The actual timer bar */
-.timer {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.timer .progress {
-    position: relative;
-    width: 100%;
-    height: 40px;
-    background-color: transparent;
-    border-radius: 30px;
-    overflow: hidden;
-    margin-bottom: 10px;
-    border: 3px solid lightcyan;
-
-}
-
-.timer .progress .progress-bar {
-    width: 50%;
-    height: 100%;
-    border-radius: 30px;
-    overflow: hidden;
-    background: linear-gradient(to right, #456990, #C2AFF0);
-    transition: 1s linear;
-}
-
-.timer .progress .progress-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: lightcyan;
-    font-size: 17px;
-    font-weight: 500;
-}
-/* Timer bar end */
 
 /* Styling for all questions & answers */
 .question-wrapper .number {
@@ -234,7 +191,7 @@ select {
 
 .btn.next {
     /* show when answer is submitted */
-    display: none;
+    /* display: none; */
 }
 
 /* End screen styling start */
@@ -257,8 +214,8 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: -100px;
+    margin-top: 30px;
+   
     padding-bottom: 30px;
     color: lightcyan;
     border-bottom: 1px solid lightcyan;
@@ -266,15 +223,10 @@ select {
 
 .instruct-cont:hover {
     transition: all 0.5s;
-    font-size: larger;
-    text-align: center;
+    font-size: x-large;
+
     cursor: zoom-in;
     font-weight: 550;
-}
-
-.instruct-cont:hover ul,
-.instruct-cont:hover ol {
-    list-style-type: none;
 }
 
 /* optimized for iphone */
