@@ -1,5 +1,4 @@
 // The array for the questionsAndAnswers, Answers & the Correct Answers.
-// Used "" type of quotations incase there was an apostrophe present.
 const questionsAndAnswers = [
     {
         question: "Who cut off Anakin's hand?",
@@ -39,7 +38,7 @@ let correctAnswers = 0;
 
 // Function to display the current question and answers.
 function displayQuestion() {
-    const question = selectRandomQuestion();
+    const question = questionsAndAnswers[currentQuestionIndex];
     document.querySelector('.question').textContent = question.question;
     const answerElements = document.querySelectorAll('.answer');
     answerElements.forEach((answerElement, index) => {
@@ -92,7 +91,7 @@ function startQuiz() {
 
     //  Adding the correct answers in the console when you start the game.
     questionsAndAnswers.forEach((item, index) => {
-        console.log(`Question: ${item.question}`);
+        console.log(`Question ${index + 1}: ${item.question}`);
         console.log(`Correct Answer: ${item.correctAnswer}`);
         console.log(); // Empty line for separation in the order they are written.
     });
@@ -114,9 +113,3 @@ document.querySelector('.restart').addEventListener('click', () => {
     // When you click Restart it removes the Class hide from the "Start Screen".
     document.querySelector('.start-screen').classList.remove('hide');
 });
-
-// Function for a question randomizer.
-function selectRandomQuestion() {
-    const randomIndex = Math.floor(Math.random() * questionsAndAnswers.length);
-    return questionsAndAnswers[randomIndex];
-}
