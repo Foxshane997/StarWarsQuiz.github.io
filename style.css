@@ -59,6 +59,9 @@ label {
     padding-bottom: 30px;
     color: black;
     border-bottom: 1px solid lightcyan;
+    text-shadow: 0 0 9px white; 
+    font-size: larger;
+    font-weight: 500;
 }
 
 .instruct-cont:hover {
@@ -70,9 +73,6 @@ label {
     background-color: lightcyan;
     padding: 5px;
     border-radius: 10px;
-}
-.instruct-cont li :hover {
-    list-style-type: none;
 }
 
 .instruct-cont ul:hover {
@@ -101,15 +101,6 @@ label {
     font-size: larger;
 }
 
-.btn:disabled {
-    cursor: not-allowed;
-    background-color: #456990;
-    border-color: #456990;
-    color: lightcyan;
-    box-shadow: none;
-    border-bottom: lightcyan;
-    border-right: lightcyan;
-}
 /* Button styling end */
 
 /* controls if & when things are hidden */
@@ -117,13 +108,13 @@ label {
     display: none;
 }
 
-
 /* Styling for all questions & answers */
 .question-wrapper .number {
     color: black; 
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 650;
     margin-bottom: 20px;
+    text-shadow: 0 0 9px white; 
 }
 
 .question-wrapper .number .total {

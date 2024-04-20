@@ -2,7 +2,7 @@
 // Used "" type of quotations incase there was an apostrophe present.
 const questionsAndAnswers = [
     {
-        question: "Who took Anakin's hand?",
+        question: "Who cut off Anakin's hand?",
         answers: ["Asaj Ventress", "Count Doku", "Darth Vader"],
         correctAnswer: "Count Doku"
     },
