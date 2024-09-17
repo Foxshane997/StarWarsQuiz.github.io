@@ -1,0 +1,238 @@
+// Variables
+$font-stack: orbitron;
+$primary-color: lightcyan;
+$hover-color: #C2AFF0;
+$checkbox-color: #8FF7A7;
+$box-shadow-color: lightgray;
+$transition-time: 0.5s;
+
+// Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-direction: row;
+  font-family: $font-stack;
+  letter-spacing: 1px;
+}
+
+// Body Styling
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url('../assets/StarWars Galaxys Edge Pexels.jpg') no-repeat center center/cover;
+}
+
+// Container
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px $box-shadow-color;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+
+  // Responsive styles for smaller screens
+  @media (max-width: 375px), (max-width: 812px) {
+    min-height: 100vh;
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+
+// Heading
+.heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 650;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid $primary-color;
+  color: black;
+  text-shadow: 0 0 10px white;
+}
+
+// Label Styling
+label {
+  display: block;
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: $primary-color;
+}
+
+// Instructions Container
+.instruct-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $primary-color;
+  font-size: larger;
+  font-weight: 500;
+  color: black;
+  text-shadow: 0 0 9px white;
+
+  &:hover {
+    transition: all $transition-time;
+    font-size: x-large;
+    cursor: zoom-in;
+    font-weight: 600;
+    background-color: $primary-color;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  ul:hover {
+    list-style-type: none;
+  }
+}
+
+// Button Styling
+.btn {
+  width: 100%;
+  height: 60px;
+  background-color: $primary-color;
+  border-radius: 10px;
+  box-shadow: 0 0 10px $box-shadow-color;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s linear;
+
+  &:hover {
+    background-color: $hover-color;
+    border-color: $hover-color;
+    color: $primary-color;
+    font-size: larger;
+  }
+}
+
+// Hidden Elements
+.hide {
+  display: none;
+}
+
+// Question & Answer Styling
+.question-wrapper {
+  margin-bottom: 50px;
+
+  .number {
+    font-size: 25px;
+    font-weight: 650;
+    margin-bottom: 20px;
+    text-shadow: 0 0 9px white;
+    color: black;
+
+    .total {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  .question {
+    font-size: 20px;
+    font-weight: 530;
+    margin-bottom: 20px;
+    color: $primary-color;
+
+    &:hover {
+      font-size: xx-large;
+      font-weight: 600;
+      color: black;
+      background-color: $primary-color;
+      border-radius: 10px;
+      box-shadow: 0 0 20px white;
+      padding-left: 5px;
+      transition: all $transition-time;
+      cursor: zoom-in;
+    }
+  }
+}
+
+// Answer Wrapper Styling
+.answer-wrapper {
+  margin-bottom: 50px;
+
+  // Styling individual answer boxes
+  .answer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    background-color: $primary-color;
+    border: 2px solid $primary-color;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s linear;
+
+    // Checkbox styling inside answers
+    .checkbox {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 3px solid $primary-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: $checkbox-color;
+      transition: all 0.3s;
+
+      // Icon within checkbox
+      .icon {
+        opacity: 0;
+      }
+
+      // Hover effect and selected state for answers
+      &:hover,
+      &.selected {
+        background-color: $checkbox-color;
+        border-color: $hover-color;
+
+        // Icon becomes visible when selected or hovered
+        .icon {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // When an answer is selected
+  .answer.selected {
+    background-color: $checkbox-color; // Highlight selected answer
+    border-color: $hover-color; // Change border on selection
+    color: black; // Change text color for visibility
+  }
+}
+
+// End Screen Styling
+.end-screen {
+  .score {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    background-color: $primary-color;
+    border-radius: 10px;
+    color: black;
+  }
+
+  .score-text {
+    font-size: 16px;
+    margin-bottom: 120px;
+    padding-bottom: 10px;
+    background-color: $primary-color;
+    color: black;
+  }
+}

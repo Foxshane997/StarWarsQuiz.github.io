@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-direction: row;
+  font-family: orbitron;
+  letter-spacing: 1px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/StarWars Galaxys Edge Pexels.jpg") no-repeat center center/cover;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px lightgray;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+@media (max-width: 375px), (max-width: 812px) {
+  .container {
+    min-height: 100vh;
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 650;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid lightcyan;
+  color: black;
+  text-shadow: 0 0 10px white;
+}
+
+label {
+  display: block;
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: lightcyan;
+}
+
+.instruct-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid lightcyan;
+  font-size: larger;
+  font-weight: 500;
+  color: black;
+  text-shadow: 0 0 9px white;
+}
+.instruct-cont:hover {
+  transition: all 0.5s;
+  font-size: x-large;
+  cursor: zoom-in;
+  font-weight: 600;
+  background-color: lightcyan;
+  padding: 5px;
+  border-radius: 10px;
+}
+.instruct-cont ul:hover {
+  list-style-type: none;
+}
+
+.btn {
+  width: 100%;
+  height: 60px;
+  background-color: lightcyan;
+  border-radius: 10px;
+  box-shadow: 0 0 10px lightgray;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.btn:hover {
+  background-color: #C2AFF0;
+  border-color: #C2AFF0;
+  color: lightcyan;
+  font-size: larger;
+}
+
+.hide {
+  display: none;
+}
+
+.question-wrapper {
+  margin-bottom: 50px;
+}
+.question-wrapper .number {
+  font-size: 25px;
+  font-weight: 650;
+  margin-bottom: 20px;
+  text-shadow: 0 0 9px white;
+  color: black;
+}
+.question-wrapper .number .total {
+  font-size: 18px;
+  font-weight: 700;
+}
+.question-wrapper .question {
+  font-size: 20px;
+  font-weight: 530;
+  margin-bottom: 20px;
+  color: lightcyan;
+}
+.question-wrapper .question:hover {
+  font-size: xx-large;
+  font-weight: 600;
+  color: black;
+  background-color: lightcyan;
+  border-radius: 10px;
+  box-shadow: 0 0 20px white;
+  padding-left: 5px;
+  transition: all 0.5s;
+  cursor: zoom-in;
+}
+
+.answer-wrapper {
+  margin-bottom: 50px;
+}
+.answer-wrapper .answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  background-color: lightcyan;
+  border: 2px solid lightcyan;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.answer-wrapper .answer .checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid lightcyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #8FF7A7;
+  transition: all 0.3s;
+}
+.answer-wrapper .answer .checkbox .icon {
+  opacity: 0;
+}
+.answer-wrapper .answer .checkbox:hover, .answer-wrapper .answer .checkbox.selected {
+  background-color: #8FF7A7;
+  border-color: #C2AFF0;
+}
+.answer-wrapper .answer .checkbox:hover .icon, .answer-wrapper .answer .checkbox.selected .icon {
+  opacity: 1;
+}
+.answer-wrapper .answer.selected {
+  background-color: #8FF7A7;
+  border-color: #C2AFF0;
+  color: black;
+}
+
+.end-screen .score {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 80px;
+  background-color: lightcyan;
+  border-radius: 10px;
+  color: black;
+}
+.end-screen .score-text {
+  font-size: 16px;
+  margin-bottom: 120px;
+  padding-bottom: 10px;
+  background-color: lightcyan;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
